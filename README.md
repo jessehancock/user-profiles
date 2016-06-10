@@ -127,11 +127,10 @@ var profiles = [
 
 We'll start in `userCtrl.js`.
 
-* Create a method on our exports object named `login`, this method should loop through the users array, find the user that matches `req.body.name` and confirm
-  that the `req.body.password` matches the user's password.
+* Create a method on our exports object named `login`, this method should loop through the users array, find the user that matches `req.body.name` and confirm that the `req.body.password` matches the user's password.
 * If we find a match we need to set `req.session.currentUser` equal to to the correct user object and `res.send({ userFound: true });`.
 * If we don't find the user, we will need to `res.send({ userFound: false });`.
-* This function will need an endpoint, let's create a 'POST' endpoint on the path `'/api/login'` and have it call our newly created login method.
+<!-- * This function will need an endpoint, let's create a 'POST' endpoint on the path `'/api/login'` and have it call our newly created login method. -->
 
 Things to note:
 
